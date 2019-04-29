@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import './app_screen/details.dart';
+import './utils/loader.dart';
 
 void main() => runApp(MyApp());
 
@@ -59,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               if (snapshot.data == null) {
                 return Container(
                   child: Center(
-                    child: Text("Loading ..."),
+                    child: Loader(),
                   ),
                 );
               } else {

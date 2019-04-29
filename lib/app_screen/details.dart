@@ -8,12 +8,12 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Padding(
-          padding: EdgeInsets.only(left: 10.0),
-          child: CircleAvatar(
-            backgroundImage: NetworkImage(user.picture),
-          ),
-        ),
+        // leading: Padding(
+        //   padding: EdgeInsets.only(left: 5.0),
+        //   child: CircleAvatar(
+        //     backgroundImage: NetworkImage(user.picture),
+        //   ),
+        // ),
         title: Text(user.name),
       ),
       body: Container(
